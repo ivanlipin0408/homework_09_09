@@ -1,4 +1,4 @@
-def filter_by_state(list_of_dict: list[dict], state="EXECUTED") -> list[dict]:
+def filter_by_state(list_of_dict: list[dict], state: str = "EXECUTED") -> list[dict]:
     """Возвращение новых списков словарей по статусу "Выполнено" или "Отменено" """
 
     filtered_list_of_dict = []
@@ -13,7 +13,7 @@ def filter_by_state(list_of_dict: list[dict], state="EXECUTED") -> list[dict]:
     return filtered_list_of_dict
 
 
-def sort_by_date(list_of_dict: list[dict], sorting_method="Убывание"):
+def sort_by_date(list_of_dict: list[dict], sorting_method: str = "Убывание") -> list[dict]:
     """ Возвращение нового списка словарей, отсортированных по дате """
 
     if sorting_method == "Убывание":
