@@ -14,7 +14,7 @@ def filter_by_state(list_of_dict: list[dict], state: str = "EXECUTED") -> list[d
 
 
 def sort_by_date(list_of_dict: list[dict], sorting_method: str = "Убывание") -> list[dict]:
-    """ Возвращение нового списка словарей, отсортированных по дате """
+    """Возвращение нового списка словарей, отсортированных по дате"""
 
     if sorting_method == "Убывание":
         sorted_list_of_dict = sorted(list_of_dict, key=lambda x: x["date"], reverse=True)
